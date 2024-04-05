@@ -10,7 +10,6 @@ import './app.css';
 export  default  class  App extends Component {
 
     maxId = 100;
-
     state = {
      todoData : [
          this.createTodoItem('Первое'),
@@ -35,7 +34,7 @@ export  default  class  App extends Component {
             // console.log(idx);
                 const newArray = [
                 ...todoData.slice(0, idx),
-                ...todoData.slice(idx +1)
+                ...todoData.slice(idx + 1)
             ];
 
             return{

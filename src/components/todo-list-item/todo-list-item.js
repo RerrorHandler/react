@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import './todo-list-item.css';
 
 export default class TodoListItem extends Component {
-
+    
     render () {
 
         const { label, onDeleted,
             onToggleImportant,
             onToggleDone,
-            important, done } = this.props;
+            important, done} = this.props;
 
         let classNames = 'todo-list-item';
         if (done) {
@@ -22,8 +22,8 @@ export default class TodoListItem extends Component {
             <span
                 className="todo-list-item-label"
                 onClick={ onToggleDone }>
-        {label}
-      </span>
+                {label}  
+            </span>
 
       <button type="button"
               className="btn btn-outline-success btn-sm float-right"
